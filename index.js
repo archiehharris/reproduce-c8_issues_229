@@ -3,12 +3,6 @@
 const Orchestrator = class {
     #receivedError;
 
-    constructor (id) {
-        if (typeof id !== "string") {
-            throw new Error("Please provide an ID.");
-        }
-    }
-
     async activate () {
         return "Activated";
     }

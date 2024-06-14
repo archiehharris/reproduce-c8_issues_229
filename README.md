@@ -1,10 +1,11 @@
-Reproduction environment:
+## Environment
 
-`node --version # v20.12.2`
+```bash
+node --version # v20.12.2
+npm --version # v10.5.0
+```
 
-`npm --version # v10.5.0`
-
-Commands to reproduce:
+## Steps to Reproduce
 
 ```bash
 npm install

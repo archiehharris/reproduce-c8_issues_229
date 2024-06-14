@@ -8,17 +8,6 @@ const { Orchestrator, handler } = require("../index");
 
 describe("reproduce test cases", () => {
 
-    it("fails before try/catch", async () => {
-
-        try {
-            await handler();
-
-        } catch (actualError) {
-            assert.instanceOf(actualError, Error);
-            assert.strictEqual(actualError.toString(), "Error: Please provide an ID.");
-        }
-    });
-
     it("fails during try/catch", async () => {
         sinon.replace(Orchestrator.prototype, "activate", sinon.fake.throws("A fake error during activate()."));
 
