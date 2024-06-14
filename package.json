@@ -1,0 +1,28 @@
+{
+  "name": "reproduce-c8_issues_229",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "c8 --reporter=html --reporter=text mocha --fail-zero"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archiehharris/reproduce-c8_issues_229.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archiehharris/reproduce-c8_issues_229/issues"
+  },
+  "homepage": "https://github.com/archiehharris/reproduce-c8_issues_229#readme",
+  "dependencies": {
+    "c8": "^10.1.2",
+    "chai": "^4.4.1",
+    "mocha": "^10.4.0",
+    "sinon": "^16.1.3"
+  }
+}
