@@ -6,7 +6,7 @@ const sinon = require("sinon");
 
 const { Orchestrator, handler } = require("../index");
 
-describe("reproduce test cases", () => {
+describe("test cases to showcase issue", () => {
 
     it("fails during try/catch", async () => {
         sinon.replace(Orchestrator.prototype, "activate", sinon.fake.throws("A fake error during activate()."));
