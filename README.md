@@ -1,6 +1,6 @@
 ## Originating Issue
 
-[issue #228](https://github.com/bcoe/c8/issues/229)
+[issue #229](https://github.com/bcoe/c8/issues/229)
 
 ## Steps to Reproduce
 
