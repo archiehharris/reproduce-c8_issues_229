@@ -22,8 +22,8 @@ const Orchestrator = class {
 };
 exports.Orchestrator = Orchestrator;
 
-exports.handler = async function (props) {
-    const orchestrator = new Orchestrator(props?.orchestrationId);
+exports.handler = async function () {
+    const orchestrator = new Orchestrator();
 
     try {
         return await orchestrator.activate();

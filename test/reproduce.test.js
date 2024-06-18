@@ -12,9 +12,7 @@ describe("test cases to showcase issue", () => {
         sinon.replace(Orchestrator.prototype, "activate", sinon.fake.throws("A fake error during activate()."));
 
         try {
-            await handler({
-                orchestrationId: "foo"
-            });
+            await handler();
 
         } catch (actualError) {
             assert.instanceOf(actualError, Error);
@@ -27,9 +25,7 @@ describe("test cases to showcase issue", () => {
 
     it("succeeds", async () => {
         try {
-            const actualResult = await handler({
-                orchestrationId: "bar"
-            });
+            const actualResult = await handler();
 
             assert.deepStrictEqual(actualResult, "Activated");
 
