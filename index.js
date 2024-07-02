@@ -14,9 +14,9 @@ const Orchestrator = class {
 
     destroy () {
         if (this.#receivedError) {
-            console.log("We encountered an error.");
+            // console.log("We encountered an error.");
         } else {
-            console.log("We did not encounter an error.");
+            // console.log("We did not encounter an error.");
         }
     }
 };
